@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robot</title>
+<style>
+    .robot {
+        width: 200px;
+        height: 300px;
+        position: relative;
+    }
+
+    .head {
+        width: 100px;
+        height: 100px;
+        background-color: #B0C4DE;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 50px;
+    }
+
+    .eye {
+        width: 20px;
+        height: 20px;
+        background-color: #000;
+        border-radius: 50%;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+
+    .eye.right {
+        left: 40px;
+    }
+
+    .eye.left {
+        right: 40px;
+    }
+
+    .antenna {
+        width: 4px;
+        height: 80px;
+        background-color: #B0C4DE;
+        position: absolute;
+        top: -80px;
+        left: 48px;
+        transform: rotate(-45deg);
+    }
+
+    .antenna-top {
+        width: 10px;
+        height: 10px;
+        background-color: #B0C4DE;
+        border-radius: 50%;
+        position: absolute;
+        top: -100px;
+        left: 46px;
+    }
+
+    .body {
+        width: 120px;
+        height: 150px;
+        background-color: #B0C4DE;
+        position: absolute;
+        top: 100px;
+        left: 40px;
+        border-radius: 20px;
+    }
+
+    .arm {
+        width: 20px;
+        height: 100px;
+        background-color: #B0C4DE;
+        position: absolute;
+        top: 120px;
+    }
+
+    .arm.left {
+        left: -20px;
+    }
+
+    .arm.right {
+        right: -20px;
+    }
+
+    .leg {
+        width: 30px;
+        height: 120px;
+        background-color: #B0C4DE;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .leg.left {
+        left: 40px;
+    }
+
+    .leg.right {
+        right: 40px;
+    }
+</style>
+</head>
+<body>
+    <div class="robot">
+        <div class="head"></div>
+        <div class="eye"></div>
+        <div class="eye right"></div>
+        <div class="antenna"></div>
+        <div class="antenna-top"></div>
+        <div class="body"></div>
+        <div class="arm left"></div>
+        <div class="arm right"></div>
+        <div class="leg left"></div>
+        <div class="leg right"></div>
+    </div>
+</body>
+</html>
